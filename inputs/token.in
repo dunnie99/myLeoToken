@@ -1,0 +1,43 @@
+// The program input for token/src/main.leo
+[mint_public]
+receiver: address = aleo1wjq40h5u9ux23kplvr7et58sl03g07pyrqjryez8vftdct87eupsupg64v;
+amount: u64 = 100u64;
+
+[mint_private]
+receiver: address = aleo1wjq40h5u9ux23kplvr7et58sl03g07pyrqjryez8vftdct87eupsupg64v;
+amount: u64 = 100u64;
+
+[transfer_public]
+receiver: address = aleo1mgfq6g40l6zkhsm063n3uhr43qk5e0zsua5aszeq5080dsvlcvxsn0rrau;
+amount: u64 = 50u64;
+
+[transfer_private]
+sender: token = token {
+    owner: aleo1ptqvxu4gjfge8tuhgq2pqap0u5pms4p97gwhu7dwngxshpfzcszsswzpzd,
+    amount: 100u64,
+    _nonce: 0group,
+};
+receiver: address = aleo1mgfq6g40l6zkhsm063n3uhr43qk5e0zsua5aszeq5080dsvlcvxsn0rrau;
+amount: u64 = 50u64;
+
+[transfer_private_to_public]
+sender: token = token {
+    owner: aleo1ptqvxu4gjfge8tuhgq2pqap0u5pms4p97gwhu7dwngxshpfzcszsswzpzd,
+    amount: 100u64,
+    _nonce: 0group,
+};
+receiver: address = aleo1mgfq6g40l6zkhsm063n3uhr43qk5e0zsua5aszeq5080dsvlcvxsn0rrau;
+amount: u64 = 50u64;
+
+[transfer_public_to_private]
+receiver: address = aleo1mgfq6g40l6zkhsm063n3uhr43qk5e0zsua5aszeq5080dsvlcvxsn0rrau;
+amount: u64 = 50u64;
+
+[transfer_alltoken_private]
+sender: token = token {
+  owner: aleo1wjq40h5u9ux23kplvr7et58sl03g07pyrqjryez8vftdct87eupsupg64v,
+  amount: 20u64,
+  _nonce: 3620333120911769342477085822970839867601758790321415363773106845335769057181group
+};
+receiver: address = aleo1mgfq6g40l6zkhsm063n3uhr43qk5e0zsua5aszeq5080dsvlcvxsn0rrau;
+
